@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-top: 2rem;
+  text-align: center;
+  background: rgba(1, 1, 26, 0.83);
+}
+
+#root {
+  border: 1px solid rgb(120, 154, 206);
+  display: inline-flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0 10px 0 10px;
+  box-shadow: 0 0 0 2px rgba(76, 147, 147, 0.415);
+  background: rgba(217, 222, 223, 0.396);
+}
+
+.container,
+.input-element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50rem;
+  background: rgb(134, 200, 200);
+}
+
+.input-element {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(178, 185, 172);
+}
+
+input:focus {
+  box-shadow: 0 0 0 4px rgba(123, 150, 177, 0.561);
+}
+
+.container {
+  border: 1px solid white;
+  box-shadow: 0 0 0 0.3px rgba(198, 196, 196, 0.468);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: transform 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  background: rgba(234, 228, 228, 0.726);
+  border-radius: 3px;
+}
+
+input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid darkcyan;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+button {
+  padding: 0.6rem 0.8rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn-delete {
+  background: rgb(213, 87, 87);
+  color: white;
+}
+
+p {
+  text-align: left;
+  flex-grow: 1;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.8rem;
+  max-width: 15rem;
+}
